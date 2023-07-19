@@ -1,3 +1,4 @@
+# Bryce Ramos
 def passwordEncoder(password):
     encodedPassword = None
     digitList = []
