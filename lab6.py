@@ -1,3 +1,4 @@
+# Bryce Ramos
 def passwordEncoder(password):
     encodedPassword = None
     digitList = []
@@ -43,6 +44,12 @@ def main():
                 encodedPassword = str(input("Please enter your encoded password to decode: "))
                 password = decode(encodedPassword)
                 print("Your password has been encoded and stored!")
+         elif menuInput == 2: # decoding passwords
+            if password is not None:
+                print(f"The encoded password is {encodedPassword}, and the original password is {password}.") # why decode a password if you already know the original
+            else:
+                # enter decoded code here
+                pass
          elif menuInput == 3: # exiting code
             break
          else: # someone didn't read the menu options
